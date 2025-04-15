@@ -19,7 +19,7 @@ const Navbar = () => {
                 {/* Menu (Desktop) */}
                 <div className="hidden md:flex space-x-8">
                     <a href="/" className="text-white hover:text-pink-200 transition">Home</a>
-                    <a href="/about" className="text-white hover:text-pink-200 transition">About</a>
+                    <a href="/AboutUs" className="text-white hover:text-pink-200 transition">About</a>
                     <a href="/services" className="text-white hover:text-pink-200 transition">Services</a>
                     <a href="/contact" className="text-white hover:text-pink-200 transition">Contact</a>
                     <a href="/privacy-policy" className="text-white hover:text-pink-200 transition">Privacy Policy</a>
@@ -55,7 +55,7 @@ const Navbar = () => {
             >
                 <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 space-y-4">
                     <a href="/" className="text-white block hover:text-pink-200 transition">Home</a>
-                    <a href="/about" className="text-white block hover:text-pink-200 transition">About</a>
+                    <a href="/AboutUs" className="text-white block hover:text-pink-200 transition">About</a>
                     <a href="/services" className="text-white block hover:text-pink-200 transition">Services</a>
                     <a href="/contact" className="text-white block hover:text-pink-200 transition">Contact</a>
                     <a href="/privacy-policy" className="text-white block hover:text-pink-200 transition">Privacy Policy</a>

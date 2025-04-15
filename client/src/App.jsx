@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import HomePage from "./pages/HomePage/HomePage";
+import AboutUs from "./pages/AboutUs/AboutUs";
 
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
         <Routes>
           <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/AboutUs" element={<AboutUs /> } />
         </Routes>
       </div>
       <Footer />
