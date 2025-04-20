@@ -1,35 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Footer from "./components/Footer/Footer";
+import Nav from "./components/Nav/Nav";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
+import HomePage from "./pages/HomePage/HomePage";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import Services from "./pages/Services/Services";
+import ContactUs from "./pages/Contact/ContactUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "./pages/PrivacyPolicy/TermsAndConditions";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [showNavBar, setShowNavBar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > lastScrollY && currentScrollY > 50) {
+      // If scrolling down and past a certain threshold, hide the NavBar
+      setShowNavBar(false);
+    } else {
+      // If scrolling up, show the NavBar
+      setShowNavBar(true);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <div className={`fixed top-0 w-full z-50 transition-transform duration-300 ${showNavBar ? "translate-y-0" : "-translate-y-full"}`}>
+        <Nav />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="mt-10">
+        <Routes>
+          <Route path="*" element={<ErrorPage />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/AboutUs" element={<AboutUs /> } />
+          <Route path="/Services" element={<Services /> } />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
+        </Routes>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <Footer />
+    </BrowserRouter>
   )
 }
-
-export default App
