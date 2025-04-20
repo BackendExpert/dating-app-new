@@ -5,7 +5,10 @@ import Nav from "./components/Nav/Nav";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import HomePage from "./pages/HomePage/HomePage";
 import AboutUs from "./pages/AboutUs/AboutUs";
-
+import Services from "./pages/Services/Services";
+import ContactUs from "./pages/Contact/ContactUs";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "./pages/PrivacyPolicy/TermsAndConditions";
 
 export default function App() {
   const [showNavBar, setShowNavBar] = useState(true);
@@ -44,6 +47,10 @@ export default function App() {
           <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/AboutUs" element={<AboutUs /> } />
+          <Route path="/Services" element={<Services /> } />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/TermsAndConditions" element={<TermsAndConditions />} />
         </Routes>
       </div>
       <Footer />

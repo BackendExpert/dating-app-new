@@ -20,10 +20,10 @@ const Navbar = () => {
                 <div className="hidden md:flex space-x-8">
                     <a href="/" className="text-white hover:text-pink-200 transition">Home</a>
                     <a href="/AboutUs" className="text-white hover:text-pink-200 transition">About</a>
-                    <a href="/services" className="text-white hover:text-pink-200 transition">Services</a>
-                    <a href="/contact" className="text-white hover:text-pink-200 transition">Contact</a>
-                    <a href="/privacy-policy" className="text-white hover:text-pink-200 transition">Privacy Policy</a>
-                    <a href="/terms" className="text-white hover:text-pink-200 transition">Terms</a>
+                    <a href="/Services" className="text-white hover:text-pink-200 transition">Services</a>
+                    <a href="/ContactUs" className="text-white hover:text-pink-200 transition">Contact</a>
+                    <a href="/PrivacyPolicy" className="text-white hover:text-pink-200 transition">Privacy Policy</a>
+                    <a href="/TermsAndConditions" className="text-white hover:text-pink-200 transition">Terms</a>
                 </div>
 
                 {/* Social Media (Desktop) */}
@@ -56,10 +56,10 @@ const Navbar = () => {
                 <div className="bg-gradient-to-r from-pink-600 to-red-500 p-4 space-y-4">
                     <a href="/" className="text-white block hover:text-pink-200 transition">Home</a>
                     <a href="/AboutUs" className="text-white block hover:text-pink-200 transition">About</a>
-                    <a href="/services" className="text-white block hover:text-pink-200 transition">Services</a>
-                    <a href="/contact" className="text-white block hover:text-pink-200 transition">Contact</a>
-                    <a href="/privacy-policy" className="text-white block hover:text-pink-200 transition">Privacy Policy</a>
-                    <a href="/terms" className="text-white block hover:text-pink-200 transition">Terms</a>
+                    <a href="/Services" className="text-white block hover:text-pink-200 transition">Services</a>
+                    <a href="/ContactUs" className="text-white block hover:text-pink-200 transition">Contact</a>
+                    <a href="/PrivacyPolicy" className="text-white block hover:text-pink-200 transition">Privacy Policy</a>
+                    <a href="/TermsAndConditions" className="text-white block hover:text-pink-200 transition">Terms</a>
                 </div>
             </div>
         </nav>
