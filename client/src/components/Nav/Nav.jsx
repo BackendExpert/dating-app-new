@@ -24,6 +24,7 @@ const Navbar = () => {
                     <a href="/ContactUs" className="text-white hover:text-pink-200 transition">Contact</a>
                     <a href="/PrivacyPolicy" className="text-white hover:text-pink-200 transition">Privacy Policy</a>
                     <a href="/TermsAndConditions" className="text-white hover:text-pink-200 transition">Terms</a>
+                    <a href="/TermsAndConditions" className="text-white hover:text-pink-200 transition">Login</a>                    
                 </div>
 
                 {/* Social Media (Desktop) */}
