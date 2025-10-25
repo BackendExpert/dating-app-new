@@ -3,7 +3,7 @@ import { Heart, ShieldCheck, Sparkles, Smile } from "lucide-react";
 
 const AboutUs = () => {
     return (
-        <section className="bg-white py-20 text-gray-800">
+        <section className="bg-white py-20 text-gray-800 pt-28">
             <div className="max-w-6xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">

@@ -22,7 +22,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="min-h-screen flex items-center justify-center bg-pink-50 py-12 px-4 sm:px-6 lg:px-8">
+        <div className="min-h-screen flex items-center justify-center bg-pink-50 py-12 px-4 sm:px-6 lg:px-8 mt-16">
             <div className="max-w-4xl w-full bg-white p-10 rounded-xl shadow-lg">
                 <h1 className="text-5xl font-extrabold text-center text-gray-800 mb-6">Contact Us</h1>
                 <p className="text-center text-gray-600 mb-8 text-lg leading-relaxed">

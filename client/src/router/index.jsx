@@ -8,6 +8,7 @@ import ContactUs from "../pages/Contact/ContactUs";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsAndConditions from "../pages/PrivacyPolicy/TermsAndConditions";
 import TestForm from '../pages/AuthPages/TestForm';
+import SignUp from '../pages/AuthPages/SignUp';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                     <Route path="TermsAndConditions" element={<TermsAndConditions />} />
                     <Route path='Testforom' element={<TestForm /> } />
                     <Route path='login' element={<Login />} />
+                    <Route path='signup' element={<SignUp /> } />
                 </Route>
             </Routes>
         </BrowserRouter>

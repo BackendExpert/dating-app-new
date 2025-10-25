@@ -116,7 +116,7 @@ function Services() {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-rose-50 to-white py-14 px-6">
+        <div className="min-h-screen bg-gradient-to-br from-rose-50 to-white py-14 px-6 pt-28">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <h1 className="text-5xl font-extrabold text-center text-rose-600 mb-4">
